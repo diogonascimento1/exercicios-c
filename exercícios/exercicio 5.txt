@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(){
+float num;
+int r1=0,c50=0,c25=0,c10=0,c5=0,c1=0;
+printf("digite valor a saber em moedas:");
+scanf("%f",&num);
+    while(num>=1){
+    r1++;
+    num-=1;
+    }
+    while(num>=0.50){
+    c50++;
+    num-=0.50;
+    }
+    while(num>=0.25){
+    c25++;
+    num-=0.25;
+    }
+    while(num>=0.10){
+    c10++;
+    num-=0.10;
+    }
+    while(num>=0.05){
+    c5++;
+    num-=0.05;
+    }
+    while(num>=0.01){
+    c1++;
+    num-=0.01;
+    }
+printf("quantidade respectiva em\n1 real :%d,\n50 centavos:%d\n25 centavos:%d\n10 centavos:%d\n5 centavos:%d\n1 centavo:%d",r1,c50,c25,c10,c5,c1);
+}
+    

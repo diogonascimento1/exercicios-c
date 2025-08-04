@@ -1,0 +1,27 @@
+#include<stdio.h>
+struct Aluno{
+        char nome[20];
+        float nota;
+        int aux=0;
+    };
+
+int main(){
+    struct Aluno alunos[5];
+    
+    for(int i=0;i<5; i++){
+        printf("digite o nome %d:",i+1);
+        fgets(alunos[i].nome,20,stdin);
+        
+        printf("digite a nota %d:",i+1);
+        scanf("%f",&alunos[i].nota);
+        getchar();
+    }
+    printf("\nlista de alunos e suas notas:");
+        while()
+            
+        }
+        for(int i=0; i<=5;i++){
+            printf("aluno: %snota: %.2f\n",alunos[i].nome,alunos[i].nota);
+        }
+    return 0;
+}
